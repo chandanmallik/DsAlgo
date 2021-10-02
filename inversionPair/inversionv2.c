@@ -1,6 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
-int ar[] = {3,4,1,6,2,8,5};
+int ar[] = {7,9,1,2,4,8};
 int inversionx = 0 ;
 int size =  sizeof(ar)/sizeof(ar[0]);
 
@@ -85,20 +85,28 @@ printf("\n...ends....\n");
     int newi = 0;
     int newj = 0;
     int n = 0;
-    while( newi < n1 && newj < n2){
+     while( newi < n1 ){
+        
         printf("running");
         if ( newl[newi] < newr[newj]){
             newi++;
             newj = 0;
+            
+            
         }else{
             printf("\n the inversion pair %d %d \n",newl[newi] , newr[newj]);
             newj++;
             
             inversionx ++;
+            if (newj>= n2){
+                newj = 0;
+                newi++;
+            }
+            
         }
+        
 
 }
-
 
 
  
