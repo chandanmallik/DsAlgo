@@ -107,22 +107,7 @@ printf("\n...ends....\n");
         
 
 }
-// newj =0 ;
-// while (newi < n1 )
-// {
-//     if ( newl[newi] < newr[newj]){
-           
-//             newi++;
-//             newj = 0;
-            
-//         }else{
-//             printf("\n 1 the inversion pair %d %d \n",newl[newi] , newr[newj]);
-//             newj++;
-//             inversionhere = inversionhere + 1;
-//             inversionx ++;
-            
-//         }
-// }
+
 
 
 
