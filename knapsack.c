@@ -41,14 +41,16 @@ float temp[size1][size2];
             break;
         }else{
             if (totalWeight - temp[1][i] < 0){
+                printf("items or weight to add %f of item %f with profit rate %f\n",(totalWeight / temp[1][i]),temp[1][i], ( totalWeight  /  temp[1][i]) * (temp[0][i]*temp[1][i]));
                 totalprofit = totalprofit +  ( totalWeight  /  temp[1][i]) * (temp[0][i]*temp[1][i]);
                 totalWeight = totalWeight - temp[1][i] *(totalWeight / temp[1][i]);
                 
                 break;
-            }
+            }ß
             else{
             totalWeight = totalWeight - temp[1][i];
             totalprofit = totalprofit + temp[0][i] * temp[1][i];
+            printf("items or weight to add %f with profit rate %f\n",temp[1][i], temp[0][i] * temp[1][i]);
             i++;
             }
 
