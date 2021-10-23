@@ -4,7 +4,7 @@
 int a[] = {3,6,4,2,0,5,75,23,90,55,21};
 int size = sizeof(a)/sizeof(a[0]);
 void printer();
-int selectionSort(int l,int r){
+int Quicksort(int l,int r){
 
     int pivort = a[r];
     int i = l;
@@ -46,7 +46,7 @@ void printer(){
 }
 
 void select(int i , int j){  
-    int newIndex = selectionSort(i,j);
+    int newIndex = Quicksort(i,j);
     if (i<j){
         
         select(i,newIndex-1);
